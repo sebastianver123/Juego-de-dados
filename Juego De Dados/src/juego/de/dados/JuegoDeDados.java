@@ -18,11 +18,12 @@ public class JuegoDeDados {
         
         Dado1 unDado=new Dado1();
         Dado1 otroDado=new Dado1();
-        
-        
+              
         
         
         Grafico miGrafico=new Grafico();
+        miGrafico.numero=unDado;
+        miGrafico.numero=otroDado;
         miGrafico.setVisible(true);
     }
     
