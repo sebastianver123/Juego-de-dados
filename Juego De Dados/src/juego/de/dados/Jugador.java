@@ -19,15 +19,15 @@ public class Jugador {
        return monto-apuesta;
        
     }
-      public float perderdoble(){
+      public float perderDoble(){
        return monto-apuesta*2;
        
     }
-      public float ganardoble(){
+      public float ganarDoble(){
        return monto+apuesta*2;
        
     }        
-      public float noperdernada(){
+      public float noPerderNada(){
        return monto;
        
     }
@@ -35,9 +35,13 @@ public class Jugador {
        return monto+apuesta;
        
     }
-      public float perderporcentaje(){
+      public float perderPorcentaje(){
        return (float) (monto-apuesta*0.015);
        
     }
+  
+      
+      
+      
     
 }

@@ -12,6 +12,7 @@ package juego.de.dados;
 public class Grafico extends javax.swing.JFrame {
     
     Dado1 numero;
+    Jugador cantidad;
    
     
     /**
@@ -38,8 +39,8 @@ public class Grafico extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         Apostar = new javax.swing.JTextField();
-        Cantidad = new javax.swing.JTextField();
         Pantalla = new javax.swing.JTextField();
+        Cantidad = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,11 +56,7 @@ public class Grafico extends javax.swing.JFrame {
             }
         });
 
-        num2.setText("jLabel2");
-
-        num1.setText("jLabel2");
-
-        jLabel2.setText("A apuesta");
+        jLabel2.setText("A puesta");
 
         jLabel3.setText("Billetera");
 
@@ -80,7 +77,7 @@ public class Grafico extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(num1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 295, Short.MAX_VALUE)
                 .addComponent(num2)
                 .addGap(68, 68, 68))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -93,8 +90,8 @@ public class Grafico extends javax.swing.JFrame {
                             .addComponent(jLabel2))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Apostar, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)
-                            .addComponent(Cantidad)
+                            .addComponent(Cantidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Apostar)
                             .addComponent(Pantalla)))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -115,11 +112,11 @@ public class Grafico extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(Apostar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
+                .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(Cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                    .addComponent(Cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(Pantalla, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -142,6 +139,21 @@ public class Grafico extends javax.swing.JFrame {
     
     num1.setText(String.valueOf(numero.lanzar()));
     num2.setText(String.valueOf(numero.lanzar()));
+    
+    
+    
+        String numero1 =num1.getText();
+        double dob1 = Double.parseDouble(numero1);
+        String numero2 =num2.getText();
+        double dob2 = Double.parseDouble(numero2);
+        
+        
+        
+        Cantidad.setText(String.valueOf(cantidad.noPerderNada()));
+        
+    
+    
+   
      
     }//GEN-LAST:event_LanzarMouseClicked
 
@@ -182,7 +194,7 @@ public class Grafico extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Apostar;
-    private javax.swing.JTextField Cantidad;
+    private javax.swing.JLabel Cantidad;
     private javax.swing.JButton Lanzar;
     private javax.swing.JTextField Pantalla;
     private javax.swing.JLabel jLabel1;
