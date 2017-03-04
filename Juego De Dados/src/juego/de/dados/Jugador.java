@@ -15,33 +15,27 @@ public class Jugador {
     int monto= 1000000000;
     float apuesta;
    
-    public float perder(){
-       return monto-apuesta;
-       
-    }
-      public float perderDoble(){
-       return monto-apuesta*2;
-       
-    }
-      public float ganarDoble(){
-       return monto+apuesta*2;
-       
-    }        
-      public float noPerderNada(){
-       return monto;
-       
-    }
-      public float ganar(){
-       return monto+apuesta;
-       
-    }
-      public float perderPorcentaje(){
-       return (float) (monto-apuesta*0.015);
-       
+   
+    public void respuesta(){
+        
+        switch (opcion){
+            case 2: saldo =  monto-apuesta; System.out.println(saldo);break;
+            case 3: saldo = monto-(apuesta*2);System.out.println(saldo);break;
+            case 7: saldo = monto+(apuesta*2);System.out.println(saldo);break;
+            case 11: saldo=saldo ;System.out.println(saldo);break;
+            case 12: saldo = monto+apuesta;System.out.println(saldo);break;
+            default : saldo = (float) (monto-(apuesta*0.015)); System.out.println(saldo);break;
+            
+            
+        }
+        
     }
   
-      
+  
+    
+    
+}
       
       
     
-}
+

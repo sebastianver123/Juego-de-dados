@@ -149,7 +149,12 @@ public class Grafico extends javax.swing.JFrame {
         
         
         
-        Cantidad.setText(String.valueOf(cantidad.noPerderNada()));
+        
+        
+        
+        String numero3 = Apostar.getText();
+        int int1 = (int) Double.parseDouble(numero3);
+        
         
     
     
